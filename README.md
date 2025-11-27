@@ -1,71 +1,84 @@
-# gen-suit-component README
+# React Component Generator
 
-This is the README for your extension "gen-suit-component". After writing up a brief description, we recommend including the following sections.
+A Visual Studio Code extension that helps you **quickly scaffold React component folders** with a consistent file structure.
 
-## Features
+## 🚀 Installation
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+You don’t need to publish this extension — just install it manually using the `.vsix` file provided in this repository.
 
-For example if there is an image subfolder under your extension project workspace:
+### Steps
 
-\!\[feature X\]\(images/feature-x.png\)
+1. Download the latest `.vsix` file from this repository (for example: `react-component-generator-0.0.1.vsix`).
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+2. Open **Visual Studio Code**.
 
-## Requirements
+3. Go to the **Extensions** view (click the square icon on the left sidebar).
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+4. Click the **⋯ (three dots)** menu at the top right of the Extensions pane.
 
-## Extension Settings
+5. Choose **“Install from VSIX…”**.
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+6. Select the `.vsix` file you downloaded.
 
-For example:
+Once installed, the extension is ready to use!
 
-This extension contributes the following settings:
+## 🧭 Usage
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+You can use the command from the **Command Palette** or the **Explorer context menu**.
 
-## Known Issues
+### Option 1 — Command Palette
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+1. Press `Cmd + Shift + P` (Mac) or `Ctrl + Shift + P` (Windows/Linux).
+2. Search for **“Create Component”** and select it.
+3. Enter a component name.
+4. Choose the destination folder.
 
-## Release Notes
+### Option 2 — Right-Click on a Folder
 
-Users appreciate release notes as you update your extension.
+1. In the VS Code file explorer, **right-click any folder**.
+2. Select **“Create Component”**.
+3. Enter a component name.
 
-### 1.0.0
+## 🧩 What It Does
 
-Initial release of ...
+The extension creates a new folder with your component name and automatically generates four files inside it:
 
-### 1.0.1
+```
+[ComponentName]/
+├── [ComponentName].tsx
+├── [ComponentName].styles.ts
+├── [ComponentName].types.ts
+└── [ComponentName].stories.tsx
+```
 
-Fixed issue #.
+Each file is pre-populated with basic boilerplate content, which you can easily customize.
 
-### 1.1.0
+## 🧑💻 Example
 
-Added features X, Y, and Z.
+If you run **Create Component → MyButton**, it will generate:
 
----
+```
+MyButton/
+├── MyButton.tsx
+├── MyButton.styles.ts
+├── MyButton.types.ts
+└── MyButton.stories.tsx
+```
 
-## Following extension guidelines
+## ⚙️ Requirements
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+- **Visual Studio Code** version 1.90.0 or higher
+- **Node.js** (only needed if you plan to build/modify the extension)
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+## 📦 Source Project
 
-## Working with Markdown
+This repository contains both the `.vsix` installation file and the original TypeScript source code.  
+If you want to modify the source and build your own version:
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+```bash
+npm install
+npm run package
+vsce package
+```
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Then you can install your newly built `.vsix` following the same steps as above.
