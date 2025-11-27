@@ -4,6 +4,7 @@
   "publisher": "Lucas K. Teloeken",
   "description": "Generates React component folder structure.",
   "version": "0.0.1",
+  "icon": "media/icon.png",
   "engines": {
     "vscode": "^1.106.1"
   },
