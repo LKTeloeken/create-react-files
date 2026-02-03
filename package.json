@@ -1,12 +1,12 @@
 {
   "name": "gen-react-component",
   "displayName": "gen-react-component",
-  "publisher": "Lucas K. Teloeken",
+  "publisher": "LucasKTeloeken",
   "description": "Generates React component folder structure.",
   "version": "0.0.1",
   "icon": "media/icon.png",
   "engines": {
-    "vscode": "^1.106.1"
+    "vscode": "^1.95.0"
   },
   "repository": {
     "type": "git",
@@ -46,7 +46,7 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.106.1",
+    "@types/vscode": "^1.95.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "22.x",
     "typescript-eslint": "^8.46.3",
